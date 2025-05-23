@@ -85,7 +85,7 @@ function App() {
         } else {
           setError('Invalid YouTube URL');
         }
-      }}>
+      }} />
         <div className="main-content">
           <div className="left-column">
             {videoId && (
@@ -123,8 +123,7 @@ function App() {
             {videoId && <VideoPlayer timestampSeconds={combinedTimestamps} />}
           </div>
         </div>
-      </VideoInput>
-    </div>
+      </div>
   );
 }
 
